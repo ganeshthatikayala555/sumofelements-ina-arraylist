@@ -1,0 +1,25 @@
+import java.util.List;
+import java.util.ArrayList;
+
+public class Solution {
+    public static void main(String[] args) {
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(10);
+        list.add(11);
+        
+        int result = simpleArraySum(list);
+        System.out.println("Sum: " + result);
+    }
+    
+    public static int simpleArraySum(List<Integer> ar) {
+        int sum = 0;
+        for (int num : ar) {
+            sum += num;
+        }
+        return sum;
+    }
+}
